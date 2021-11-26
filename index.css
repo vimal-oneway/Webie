@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+* {
+  font-family: "Oswald", "sans-serif";
+  font-size: 18px;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: hsl(217, 54%, 11%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 400px;
+  padding: 25px;
+  margin: 120px;
+  height: 750px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 70px 5px rgba(0, 0, 0, 0.63);
+  box-shadow: 5px 5px 41px 5px rgba(0, 0, 0, 0.63);
+}
+
+.EquilibirumImg {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+#img {
+  width: 350px;
+  height: 400px;
+  border-radius: 15px;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  height: 400px;
+  width: 350px;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.iconOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.iconView {
+  margin: 47% 45%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.EquilibirumImg:hover .iconView {
+  opacity: 1;
+  z-index: 20;
+}
+
+.EquilibirumImg:hover .overlay {
+  transition: 0.5 all ease-in-out;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.Equilibrium {
+  margin: 30px auto;
+}
+.Equilibrium a {
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 600;
+}
+.para {
+  color: hsl(215, 51%, 70%);
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.priceDay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.price,
+.days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  margin: 0 10px 0 0;
+  width: 15px;
+}
+
+.icon {
+  margin: 0px 10px 0 0;
+  width: 30px;
+}
+
+#Price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.line {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#avatar {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 0 15px 0 0;
+}
+
+.Author {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  margin-right: 7px;
+}
+
+.name a {
+  color: white;
+  font-weight: 400;
+}
+
+.hover:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 300px;
+    height: 550px;
+  }
+  * {
+    font-size: 14px;
+  }
+  .icon {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .days p {
+    margin-top: 0px;
+  }
+  .icons {
+    width: 10px;
+    margin-right: 5px;
+  }
+  .EquilibirumImg,
+  #img,
+  .overlay {
+    width: 250px;
+    height: 250px;
+  }
+  .iconView {
+    margin: 40% 43%;
+  }
+}
